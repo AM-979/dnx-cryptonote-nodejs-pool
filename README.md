@@ -181,13 +181,13 @@ Explanation for each field:
 "poolHost": "your.pool.host",
 
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "graft",
+"coin": "Dynex",
 
 /* Used for front-end display */
-"symbol": "GRFT",
+"symbol": "DNX",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinUnits": 10000000000,
+"coinUnits": 1000000000,
 
 /* Number of coin decimals places for notifications and front-end */
 "coinDecimalPlaces": 4,
@@ -196,13 +196,8 @@ Explanation for each field:
 "coinDifficultyTarget": 120,
 
 /* Set daemon type. Supported values: default, forknote (Fix block height + 1), bytecoin (ByteCoin Wallet RPC API) */
-"deamonType": "default",
+"deamonType": "bytecoin",
 
-/* Set Cryptonight algorithm settings.
-   Supported algorithms: cryptonight (default). cryptonight_light and cryptonight_heavy
-   Supported variants for "cryptonight": 0 (Original), 1 (Monero v7), 3 (Stellite / XTL)
-   Supported variants for "cryptonight_light": 0 (Original), 1 (Aeon v7), 2 (IPBC)
-   Supported blob types: 0 (Cryptonote), 1 (Forknote v1), 2 (Forknote v2), 3 (Cryptonote v2 / Masari) */
 "cnAlgorithm": "cryptonight",
 "cnVariant": 1,
 "cnBlobType": 0,
@@ -576,8 +571,17 @@ Explanation for each field:
     "blocks": {
         "enabled": true,
         "days": 30 // Number of days displayed in chart (if value is 1, display last 24 hours)
-    }
-}
+    },
+} 
+
+// You can start without own pool service and don`t fill this section. In this case common poolservice poolservice.dynexcoin.org:8080 will be used
+"poolService": {
+  "host" : "localhost",
+  "port" : 19333
+},
+"pool_uuid": "YOUR-POOL-ID"
+    
+
 ```
 
 #### 3) Start the pool
@@ -671,6 +675,10 @@ to `index.html` or other front-end files thus reducing the difficulty of merging
 
 
 Then simply serve the files via nginx, Apache, Google Drive, or anything that can host static content.
+
+#### Mallob and PoolService
+You can start without your own mallob and poolservice servers.
+If everything works as expected, you should run these services to reduce ping. Don`t forget to change config file after starting poolservice.
 
 #### SSL
 

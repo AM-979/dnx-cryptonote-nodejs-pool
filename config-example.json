@@ -17,11 +17,6 @@
     "secondsFromStartToEnableMPH": 3600,
     "refreshStatsInterval": 60000
   },
-  "mallob": {
-    "host" : "localhost",
-    "port" : 19333
-  },
-
   "logging": {
     "files": {
       "level": "info",
@@ -301,6 +296,10 @@
         "enabled": true
       }
     }
+  },
+  "poolService": {
+    "host" : "localhost",
+    "port" : 19333
   },
   "pool_uuid": "YOUR-POOL-ID"
 }
