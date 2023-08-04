@@ -1,6 +1,8 @@
 # Reference Implementation of a DynexSolve mining pool 
 
-Based on a fork from:
+Based on a fork from https://github.com/jagerman/cryptonote-nodejs-pool
+
+******************
 
 cryptonote-nodejs-pool
 ======================
