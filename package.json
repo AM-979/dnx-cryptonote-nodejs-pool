@@ -1,12 +1,12 @@
 {
-	"name": "cryptonote-nodejs-pool",
-	"version": "1.4.0",
+	"name": "dnx-cryptonote-nodejs-pool",
+	"version": "1.5.0",
 	"license": "GPL-2.0",
 	"Original author": "Daniel Vandal",
-	"Maintained by": "Musclesonvacation",
+	"Maintained by": "e4p1k0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dvandal/cryptonote-nodejs-pool.git"
+		"url": "https://github.com/e4p1k0/dnx-cryptonote-nodejs-pool.git"
 	},
 	"dependencies": {
 		"async": "^3.2.0",

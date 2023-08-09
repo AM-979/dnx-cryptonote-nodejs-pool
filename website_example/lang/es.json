@@ -16,13 +16,14 @@
     "statsUpdated": "Estadísticas actualizadas",
     
     "poolHashrate": "Tasa Pool (hash)",
-    "currentEffort": "Esfuerzo actual",
+    "currentEffort": "Ronda actual",
     "networkHashrate": "Tasa Red (hash)",
     "networkDifficulty": "Dificultad",
     "blockchainHeight": "Altura",
     "networkLastReward": "Última recompensa",
     "poolMiners": "Mineros conectados",
     "poolFee": "Tarifa Pool",
+    "finderReward": "Buscador Recompensa",
     
     "minerStats": "Tus estadísticas e historial de pagos",
     "workerStats": "Estadísticas personales",
